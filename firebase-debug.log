@@ -1,0 +1,103 @@
+[debug] [2021-10-30T16:15:56.544Z] ----------------------------------------------------------------------
+[debug] [2021-10-30T16:15:56.547Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MCA\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-10-30T16:15:56.548Z] CLI Version:   9.21.0
+[debug] [2021-10-30T16:15:56.548Z] Platform:      win32
+[debug] [2021-10-30T16:15:56.548Z] Node Version:  v14.17.6
+[debug] [2021-10-30T16:15:56.549Z] Time:          Sat Oct 30 2021 22:15:56 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-10-30T16:15:56.549Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-30T16:15:56.551Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-10-30T16:15:56.637Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-30T16:15:56.638Z] > authorizing via signed-in user (shakibeeeuap28@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\projectss\travel-tourism
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2021-10-30T16:15:57.611Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-10-30T16:15:57.611Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using tour-services-a0a0e. 
+[debug] [2021-10-30T16:16:09.844Z] > refreshing access token with scopes: []
+[debug] [2021-10-30T16:16:09.844Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-30T16:16:10.150Z] <<< HTTP RESPONSE 200 {"date":"Sat, 30 Oct 2021 16:16:11 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-30T16:16:10.157Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tour-services-a0a0e [none]
+[debug] [2021-10-30T16:16:10.754Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tour-services-a0a0e 403
+[debug] [2021-10-30T16:16:10.755Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tour-services-a0a0e {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-10-30T16:16:10.755Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-10-30T16:16:10.959Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\MCA\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\MCA\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:240:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Users\MCA\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\MCA\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\MCA\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\MCA\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project tour-services-a0a0e. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-10-30T16:17:20.361Z] ----------------------------------------------------------------------
+[debug] [2021-10-30T16:17:20.363Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MCA\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-10-30T16:17:20.364Z] CLI Version:   9.21.0
+[debug] [2021-10-30T16:17:20.364Z] Platform:      win32
+[debug] [2021-10-30T16:17:20.364Z] Node Version:  v14.17.6
+[debug] [2021-10-30T16:17:20.365Z] Time:          Sat Oct 30 2021 22:17:20 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-10-30T16:17:20.365Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-30T16:17:20.424Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-30T16:17:20.425Z] > authorizing via signed-in user (shakibeeeuap28@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\projectss\travel-tourism
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using tour-services-a0a0e. 
+[debug] [2021-10-30T16:17:33.430Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tour-services-a0a0e [none]
+[debug] [2021-10-30T16:17:33.966Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tour-services-a0a0e 403
+[debug] [2021-10-30T16:17:33.966Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tour-services-a0a0e {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-10-30T16:17:33.967Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-10-30T16:17:34.191Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\MCA\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\MCA\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:240:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Users\MCA\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\MCA\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\MCA\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\MCA\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project tour-services-a0a0e. Please make sure the project exists and your account has permission to access it.
