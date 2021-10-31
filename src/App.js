@@ -12,6 +12,7 @@ import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './component/Login/PrivateRoute/PrivateRoute';
 import AddTourPackage from './component/AddTourPackage/AddTourPackage';
 import Management from './component/ManageMent/Management';
+import Banner from './component/Home/Banner/Banner';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         </Route>
 
         <Route path="/home">
+          <Banner></Banner>
         <Packages></Packages>
         </Route>
 

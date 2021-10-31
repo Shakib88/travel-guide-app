@@ -36,6 +36,7 @@ const Header = () => {
       </Navbar.Text>
     </Navbar.Collapse>
   </Container>
+  
 </Navbar>
     );
 };
