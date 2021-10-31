@@ -27,7 +27,7 @@ const Management = () => {
 
     return (
         <div>
-            <h2>Managesment your tripe</h2>
+            <h2>Please manage your tripe</h2>
             <br />
             <br />
             <br />

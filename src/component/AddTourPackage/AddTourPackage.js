@@ -12,7 +12,7 @@ const AddTourPackage = () => {
     axios.post('https://intense-bayou-56490.herokuapp.com/services',data)
         .then(res => {
             if(res.data.insertedId){
-                alert('Than you , added successfully');
+                alert('Thank you , added successfully');
                 reset();
             }
             console.log(res);
